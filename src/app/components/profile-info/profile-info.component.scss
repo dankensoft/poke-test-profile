@@ -1,0 +1,84 @@
+.profile-info-content {
+    background-color: #00693C;
+    width: 392px;
+    height: 600px;
+    padding: 24px 56px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+
+
+    
+    &--title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #000000;
+        span {
+            font-size: 30px;
+            line-height: 45px;
+            font-weight: 400;
+        }
+    }
+
+    &--image {
+        margin-top: 35px;
+        width: 269px;
+        height: 269px;
+        border: 14px solid #fff;
+        border-radius: 50%;
+        background-color: #E7EFF5;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &--upload-image-btn {
+        margin-top: 51px;
+        width: 100%;
+        height: 78px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        border: 1px dashed #9BB8D3;
+        border-radius: 10px;
+        padding: 0 25px;
+        color: #2C85BC;
+        cursor: pointer;
+    }
+
+    &--info {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 35px;
+        &--row {
+            width: 100%;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.profile-photo-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+

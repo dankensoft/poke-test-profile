@@ -1,0 +1,109 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Poppins';
+    src: url(assets/fonts/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(assets/fonts/Poppins-Bold.ttf
+    );
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(assets/fonts/Poppins-Light.ttf);
+    font-weight: 300;
+}
+
+
+* {
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.font-weight-regular {
+    font-weight: 400 !important;
+}
+
+body {
+    margin: 0;
+    display: block;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.custom-input {
+    position: relative; 
+    input {
+        position: relative;
+        z-index: 0;
+        background: transparent;
+        padding: 2px 18px;
+        border: 1px solid #868686;
+        border-radius: 10px;
+        width: 100%;
+        height: 50px;
+      }
+      label {
+        position: absolute;
+        top: 28px;
+        left: 18px;
+        font-size: 15px;
+        line-height: 18px;
+        transition: all 0.3s ease-in-out;
+        z-index: 1000;
+        color: #454545;
+        
+      }
+      input:focus + label {
+        top: 0px;
+        font-size: 14px;
+      }
+}
+  
+
+  
+input {
+    position: relative;
+    z-index: 0;
+    background: transparent;
+    padding: 2px 18px;
+    border: 1px solid #868686;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+  }
+  
+
+  textarea:focus, input:focus{
+    outline: none;
+}
+
+.app-title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 48px;
+    color: #01426A;
+}
+
+.app-textinfo {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #868686;
+}
+
+.default-button {
+    background: #01426A;
+    border-radius: 10px;
+    height: 50px;
+    width: 222px;
+    margin: auto;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+}

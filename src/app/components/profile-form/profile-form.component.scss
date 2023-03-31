@@ -1,0 +1,35 @@
+.profile-form {
+    max-width: 341px;
+    &--title {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 48px;
+        color: #01426A;
+    }
+
+    &--info {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #868686;
+    }
+
+    input {
+        width: auto;
+        margin: 24px 0;
+        color: #454545;
+        border-color: #01426A;
+    }
+
+    .custom-input {
+        width: 100%;
+        input {
+            min-width: 303px;
+            border-color: #01426A;
+        }
+    }
+
+    .default-button {
+        margin-top: 62px;
+    }
+}

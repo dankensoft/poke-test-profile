@@ -1,0 +1,27 @@
+<form class="profile-form" [formGroup]="formGroup">
+    <p class="profile-form--title">
+        Tu información
+    </p>
+    <p class="profile-form--info">
+        Completa la siguiente información para completar tu perfil
+    </p>
+    
+    <div class="form-group">
+        <div class="custom-input">
+            <input type="text" formControlName="name"/>
+            <label>Nombre*</label>
+        </div>
+        <div class="custom-input">
+            <input type="text" formControlName="hobbie"/>
+            <label>Pasatiempo favorito*</label>
+        </div>
+        <input type="date" placeholder="Cumpleaños" formControlName="birthday"/>
+        <div class="custom-input">
+            <input type="text" formControlName="dui"/>
+            <label>DUI</label>
+        </div>
+        <button class="default-button" (click)="continue($event)">Continuar</button>
+    </div>
+   
+
+</form>

@@ -1,0 +1,35 @@
+<div class="profile-info-content">
+    <div class="profile-info-content--title">
+        <span>{{ title }}</span>
+        <img *ngIf="titleIconSrc" src="{{titleIconSrc}}"/>
+    </div>
+    <div class="profile-info-content--image">
+        <img #profilePhoto class="profile-photo"/>
+    </div>
+    <input #imageInput
+    type="file"
+    accept="image/*"
+    class="profile-photo-input"
+    (change)="processFile(imageInput)">
+
+    <div *ngIf="showUpload" class="profile-info-content--upload-image-btn" (click)="imageInput.click()">
+        <span>Adjunta una foto</span>
+        <img src="assets/img/cloud-icon.png"/>
+
+    </div>
+
+    <div *ngIf="!showUpload" class="profile-info-content--info">
+        <div class="profile-info-content--info--row" *ngIf="hobbie">
+            <span>Pasatiempo:</span>
+            <span class="font-weight-regular">{{ hobbie }}</span>
+        </div>
+        <div class="profile-info-content--info--row" *ngIf="age">
+            <span>Edad:</span>
+            <span class="font-weight-regular">{{ age }}</span>
+        </div>
+        <div class="profile-info-content--info--row" *ngIf="dui">
+            <span>DUI:</span>
+            <span class="font-weight-regular">{{ dui }}</span>
+        </div>
+    </div>
+</div>

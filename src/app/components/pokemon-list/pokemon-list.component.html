@@ -1,0 +1,19 @@
+<div class="pokemon-list">
+    <div class="app-title">
+        Pokémon
+    </div>
+    <p class="app-textinfo">
+        Selecciona 3 Pokémon para que sean poarte de tu equipo
+    </p>
+    <input type="text" class="search-pokemon" (keyup)="inputChanged($event)" placeholder="Buscar por indice, nombre...">
+    <div class="pokemon-list--pokemons">
+        <div class="pokemon-list--pokemons--item" *ngFor="let pokemon of pokemons" [ngClass]="{  'selected' : this.pokemonsSelected.indexOf(pokemon) > -1 }" (click)="selectPokemon(pokemon)">
+            <img [src]="getPokemonImageByUrl(pokemon.url)"/>
+            <div class="pokemon-list--pokemons--item--info-content"  >
+                <span>#{{getPokemonId(pokemon.url)}}</span>
+                <span>{{ pokemon.name }}</span>
+            </div>
+        </div>
+    </div>
+    <button class="default-button">Guardar</button>
+</div>
